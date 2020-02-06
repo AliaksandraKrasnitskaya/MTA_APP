@@ -1,0 +1,76 @@
+<mvc:View 
+	controllerName="shops.controller.ShopDetail" 
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:forms="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+	displayBlock="true">
+	<m:Page showHeader="false">
+		<ObjectPageLayout id="idObjectPage" 
+			showTitleInHeaderContent="true"
+			busyIndicatorDelay="0"
+			upperCaseAnchorBar="false">
+			<headerTitle>
+				<ObjectPageDynamicHeaderTitle>
+						<expandedHeading>
+							<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+								<m:Title text="{/name}" wrapping="true" class="sapUiSmallMarginEnd"/>
+							</m:FlexBox>
+						</expandedHeading>
+
+						<snappedHeading>
+							<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">
+								<m:FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+								<m:Title text="{/name}" wrapping="true" class="sapUiSmallMarginEnd"/>
+								</m:FlexBox>
+							</m:FlexBox>
+						</snappedHeading>
+
+						<expandedContent>
+							<m:Text text="{/shopid}"/>
+						</expandedContent>
+					
+						<!-- <actions>
+							<m:Button
+									id="edit"
+									text="Edit"
+									type="Emphasized"
+									press="onEdit"/>
+							<m:Button
+									icon="sap-icon://action"
+									type="Transparent"/>
+						</actions> -->
+
+				</ObjectPageDynamicHeaderTitle>	
+			</headerTitle>
+
+			<headerContent>
+					<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+						<l:VerticalLayout class="sapUiSmallMarginEnd sapUiSmallMarginTop">
+							<m:ObjectStatus title="Shop Id" text="{/shopid}"/>
+						</l:VerticalLayout>		
+					</m:FlexBox>
+			</headerContent>
+
+			<sections>
+				<ObjectPageSection titleUppercase="false" id="GeneralSection" title="General Information">
+					<subSections>
+						<ObjectPageSubSection  id="GeneralSubSection"/>
+					</subSections>
+				</ObjectPageSection>
+			</sections>
+
+			<footer>
+				<m:OverflowToolbar>
+					<m:ToolbarSpacer />
+					<m:Button type="Emphasized" id="save" text="Save" press="onSave"/>
+					<m:Button text="Cancel" id="cancel" press="onCancel"/>
+				</m:OverflowToolbar>
+			</footer>
+
+		</ObjectPageLayout>
+	</m:Page>
+</mvc:View>

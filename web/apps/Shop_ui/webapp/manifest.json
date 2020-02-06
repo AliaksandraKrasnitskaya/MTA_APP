@@ -1,0 +1,130 @@
+{
+  "_version": "1.17.0",
+  "sap.app": {
+    "id": "shops",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "sourceTemplate": {
+      "id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+      "version": "1.40.12"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "http://localhost:3000/odata/", 
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "shops.view.App",
+      "type": "XML",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.60.1",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.f": {},
+        "sap.ui.layout": { "lazy": true },
+        "sap.ushell": {},
+        "sap.collaboration": {},
+        "sap.ui.comp": {},
+        "sap.uxap": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "handleValidation": true,
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "shops.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "settings": {
+          "operationMode": "Server",
+          "synchronizationMode": "None"
+        }
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "controlId": "app",
+        "viewPath": "shops.view",
+        "clearControlAggregation": false,
+        "async": true,
+        "bypassed": {
+					"target": "notFound"
+				}
+      },
+      "routes": [{
+        "pattern": "",
+        "name": "Master",
+        "target": "Master"
+      },{
+        "pattern": "ShopDetail/{shopid}",
+        "name": "ShopDetail",
+        "target": "ShopDetail"
+      }],
+      "targets": {
+        "Master": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewName": "Master",
+          "controlAggregation": "pages",
+          "viewLevel" : 1
+        },
+        "StudentDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "viewName": "ShopDetail",
+          "controlAggregation": "pages",
+          "viewLevel" : 2
+        },
+        "notFound": {
+          "viewId": "notFound",
+          "viewName": "NotFound",
+          "transition": "show",
+          "controlAggregation": "pages"
+        }
+      }
+    }
+  }
+}

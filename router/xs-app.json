@@ -1,0 +1,23 @@
+{
+  "welcomeFile": "shops/index.html",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "/api/(.*)",
+      "target": "$1",
+      "destination": "lev_srv",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/sapui5_resources/(.*)$",
+      "target": "$1",
+      "destination": "sapui5_provider"
+    },
+    {
+      "source": "^/(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}

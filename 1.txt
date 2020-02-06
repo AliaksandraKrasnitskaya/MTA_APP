@@ -1,0 +1,215 @@
+Retrieving logs for app lev_db in org P2001633511trial_trial / space dev as aliaksandra.krasnitskaya@leverx.com...
+
+   2020-02-06T15:04:37.96+0300 [API/54] OUT Created app with guid e3997aed-34ae-43e3-a14e-58cce0275d95
+   2020-02-06T15:42:43.31+0300 [API/9] OUT Updated app with guid e3997aed-34ae-43e3-a14e-58cce0275d95 ({"environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2020-02-06T15:42:47.95+0300 [API/52] OUT Updated app with guid e3997aed-34ae-43e3-a14e-58cce0275d95 ({"environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2020-02-06T15:42:56.07+0300 [API/43] OUT Uploading app package for app with guid e3997aed-34ae-43e3-a14e-58cce0275d95
+   2020-02-06T15:43:15.33+0300 [API/11] OUT Creating build for app with guid e3997aed-34ae-43e3-a14e-58cce0275d95
+   2020-02-06T15:43:16.21+0300 [STG/0] OUT Downloading sap_java_buildpack_1_19...
+   2020-02-06T15:43:16.21+0300 [STG/0] OUT Downloading ruby_buildpack...
+   2020-02-06T15:43:16.21+0300 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2020-02-06T15:43:16.21+0300 [STG/0] OUT Downloading r_buildpack...
+   2020-02-06T15:43:16.21+0300 [STG/0] OUT Downloading python_buildpack...
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloaded python_buildpack
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloading nodejs_buildpack...
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloaded sap_java_buildpack_1_19
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloading binary_buildpack...
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloading php_buildpack...
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloaded r_buildpack
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloading staticfile_buildpack...
+   2020-02-06T15:43:17.87+0300 [STG/0] OUT Downloaded ruby_buildpack
+   2020-02-06T15:43:17.88+0300 [STG/0] OUT Downloading sap_java_buildpack_1_21...
+   2020-02-06T15:43:17.90+0300 [STG/0] OUT Downloaded staticfile_buildpack
+   2020-02-06T15:43:17.90+0300 [STG/0] OUT Downloading go_buildpack...
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloaded nodejs_buildpack
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloading sap_java_buildpack...
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloaded php_buildpack
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloading sap_java_buildpack_1_20...
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloaded binary_buildpack
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloading nginx_buildpack...
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloaded sap_java_buildpack_1_21
+   2020-02-06T15:43:17.91+0300 [STG/0] OUT Downloading java_buildpack...
+   2020-02-06T15:43:17.93+0300 [STG/0] OUT Downloaded go_buildpack
+   2020-02-06T15:43:17.94+0300 [STG/0] OUT Downloaded nginx_buildpack
+   2020-02-06T15:43:17.94+0300 [STG/0] OUT Downloaded sap_java_buildpack_1_20
+   2020-02-06T15:43:17.94+0300 [STG/0] OUT Downloaded java_buildpack
+   2020-02-06T15:43:17.95+0300 [STG/0] OUT Downloaded sap_java_buildpack
+   2020-02-06T15:43:17.95+0300 [STG/0] OUT Cell 669fda39-219b-42a1-8f6d-f68e303f9d7b creating container for instance bd551a8a-1aa9-4711-a37e-2cec1ef3b76a
+   2020-02-06T15:43:18.87+0300 [STG/0] OUT Cell 669fda39-219b-42a1-8f6d-f68e303f9d7b successfully created container for instance bd551a8a-1aa9-4711-a37e-2cec1ef3b76a
+   2020-02-06T15:43:18.98+0300 [STG/0] OUT Downloading app package...
+   2020-02-06T15:43:20.85+0300 [STG/0] OUT Downloaded app package (37.2M)
+   2020-02-06T15:43:21.76+0300 [STG/0] OUT -----> Nodejs Buildpack version 1.7.4
+   2020-02-06T15:43:22.12+0300 [STG/0] OUT -----> Installing binaries
+   2020-02-06T15:43:22.12+0300 [STG/0] OUT        engines.node (package.json): ^8
+   2020-02-06T15:43:22.12+0300 [STG/0] OUT        engines.npm (package.json): unspecified (use default)
+   2020-02-06T15:43:22.12+0300 [STG/0] OUT -----> Installing node 8.16.2
+   2020-02-06T15:43:22.12+0300 [STG/0] OUT        Copy [/tmp/buildpacks/2d1887c348859996e308274c397be89e/dependencies/043f221191f4641f10dd5a5fe4c1a157/node-8.16.2-linux-x64-cflinuxfs3-41238419.tgz]
+   2020-02-06T15:43:22.22+0300 [STG/0] OUT        [31;1m**WARNING**[0m node 8.x.x will no longer be available in new buildpacks released after 2019-12-01.
+   2020-02-06T15:43:22.22+0300 [STG/0] OUT        See: https://github.com/nodejs/Release
+   2020-02-06T15:43:23.55+0300 [STG/0] OUT        Using default npm version: 6.4.1
+   2020-02-06T15:43:23.55+0300 [STG/0] OUT -----> Installing yarn 1.19.1
+   2020-02-06T15:43:23.55+0300 [STG/0] OUT        Copy [/tmp/buildpacks/2d1887c348859996e308274c397be89e/dependencies/3c6e4143e3d81d24d938953b6c5437e0/yarn-1.19.1-any-stack-34293da6.tar.gz]
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        Installed yarn 1.19.1
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT -----> Creating runtime environment
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        [34;1mPRO TIP:[0m Warning: package-lock.json not found. The buildpack may reach out to the internet to download module updates, even if they are vendored.
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        Visit https://docs.cloudfoundry.org/buildpacks/node/index.html#offline_environments
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NODE_ENV=production
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NODE_HOME=/tmp/contents105542957/deps/0/node
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NODE_MODULES_CACHE=true
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NODE_VERBOSE=false
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NPM_CONFIG_LOGLEVEL=error
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        NPM_CONFIG_PRODUCTION=true
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT -----> Building dependencies
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        Prebuild detected (node_modules already exists)
+   2020-02-06T15:43:24.09+0300 [STG/0] OUT        Rebuilding any native modules
+   2020-02-06T15:43:24.65+0300 [STG/0] OUT > @sap/hana-client@2.4.162 install /tmp/app/node_modules/@sap/hana-client
+   2020-02-06T15:43:24.65+0300 [STG/0] OUT > node checkbuild.js
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT @sap/hdi-deploy@3.11.6 /tmp/app/node_modules/@sap/hdi-deploy
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT @sap/hana-client@2.4.162 /tmp/app/node_modules/@sap/hana-client
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT debug@3.1.0 /tmp/app/node_modules/debug
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT ms@2.0.0 /tmp/app/node_modules/ms
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT @sap/hdi@2.2.4 /tmp/app/node_modules/@sap/hdi
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT async@3.1.0 /tmp/app/node_modules/async
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT @sap/xsenv@1.2.9 /tmp/app/node_modules/@sap/xsenv
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT verror@1.10.0 /tmp/app/node_modules/verror
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT assert-plus@1.0.0 /tmp/app/node_modules/assert-plus
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT core-util-is@1.0.2 /tmp/app/node_modules/core-util-is
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT extsprintf@1.4.0 /tmp/app/node_modules/extsprintf
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT handlebars@4.5.3 /tmp/app/node_modules/handlebars
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT neo-async@2.6.1 /tmp/app/node_modules/neo-async
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT optimist@0.6.1 /tmp/app/node_modules/optimist
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT minimist@0.0.10 /tmp/app/node_modules/minimist
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT wordwrap@0.0.3 /tmp/app/node_modules/wordwrap
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT source-map@0.6.1 /tmp/app/node_modules/source-map
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT commander@2.20.3 /tmp/app/node_modules/commander
+   2020-02-06T15:43:24.79+0300 [STG/0] OUT uglify-js@3.7.2 /tmp/app/node_modules/uglify-js
+   2020-02-06T15:43:24.80+0300 [STG/0] OUT        Installing any new modules (package.json)
+   2020-02-06T15:43:25.49+0300 [STG/0] OUT > deploy@ postinstall /tmp/app
+   2020-02-06T15:43:25.49+0300 [STG/0] OUT > node .build.js
+   2020-02-06T15:43:25.59+0300 [STG/0] OUT up to date in 0.264s
+   2020-02-06T15:43:26.50+0300 [STG/0] OUT        Contrast Security no credentials found. Will not write environment files.
+   2020-02-06T15:43:35.63+0300 [STG/0] OUT Exit status 0
+   2020-02-06T15:43:35.63+0300 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2020-02-06T15:43:35.63+0300 [STG/0] OUT Uploading droplet...
+   2020-02-06T15:43:35.63+0300 [STG/0] OUT Uploading build artifacts cache...
+   2020-02-06T15:43:35.74+0300 [STG/0] OUT Uploaded build artifacts cache (215B)
+   2020-02-06T15:43:36.79+0300 [API/37] OUT Creating droplet for app with guid e3997aed-34ae-43e3-a14e-58cce0275d95
+   2020-02-06T15:43:41.96+0300 [STG/0] OUT Uploaded droplet (54.7M)
+   2020-02-06T15:43:41.97+0300 [STG/0] OUT Uploading complete
+   2020-02-06T15:43:42.78+0300 [STG/0] OUT Cell 669fda39-219b-42a1-8f6d-f68e303f9d7b stopping instance bd551a8a-1aa9-4711-a37e-2cec1ef3b76a
+   2020-02-06T15:43:42.78+0300 [STG/0] OUT Cell 669fda39-219b-42a1-8f6d-f68e303f9d7b destroying container for instance bd551a8a-1aa9-4711-a37e-2cec1ef3b76a
+   2020-02-06T15:43:43.91+0300 [STG/0] OUT Cell 669fda39-219b-42a1-8f6d-f68e303f9d7b successfully destroyed container for instance bd551a8a-1aa9-4711-a37e-2cec1ef3b76a
+   2020-02-06T15:43:52.86+0300 [API/40] OUT Updated app with guid e3997aed-34ae-43e3-a14e-58cce0275d95 ({:droplet_guid=>"1f0e3dd3-1afa-49d8-88c9-5ea73197ea27"})
+   2020-02-06T15:43:54.69+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 creating container for instance b4beb082-9edb-4867-9907-e2d51e9ad184
+   2020-02-06T15:43:57.10+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 successfully created container for instance b4beb082-9edb-4867-9907-e2d51e9ad184
+   2020-02-06T15:44:04.76+0300 [APP/TASK/deploy/0] OUT > deploy@ start /home/vcap/app
+   2020-02-06T15:44:04.76+0300 [APP/TASK/deploy/0] OUT > node node_modules/@sap/hdi-deploy/deploy.js
+   2020-02-06T15:44:06.71+0300 [APP/TASK/deploy/0] OUT @sap/hdi-deploy, version 3.11.6 (mode default), server version 2.00.040.00.1563450557 (2.0.40.0), node version 8.16.2, HDI version 2, container API version 44
+   2020-02-06T15:44:06.71+0300 [APP/TASK/deploy/0] OUT Using default environment variables from file "default-env.json"
+   2020-02-06T15:44:06.71+0300 [APP/TASK/deploy/0] OUT The server does not support live updating of make messages. The messages will be displayed, when the make is done.
+   2020-02-06T15:44:06.87+0300 [APP/TASK/deploy/0] OUT No ignore file at /home/vcap/app/.hdiignore.
+   2020-02-06T15:44:06.87+0300 [APP/TASK/deploy/0] OUT Collecting files...
+   2020-02-06T15:44:06.95+0300 [APP/TASK/deploy/0] OUT Collecting files... ok (0s 83ms)
+   2020-02-06T15:44:06.95+0300 [APP/TASK/deploy/0] OUT 3 directories collected
+   2020-02-06T15:44:06.95+0300 [APP/TASK/deploy/0] OUT 8 files collected
+   2020-02-06T15:44:06.95+0300 [APP/TASK/deploy/0] OUT 0 reusable modules collected
+   2020-02-06T15:44:06.95+0300 [APP/TASK/deploy/0] OUT Target service: lev_hdi
+   2020-02-06T15:44:07.36+0300 [APP/TASK/deploy/0] OUT Session variable APPLICATION is set to "SAP_HDI/dev/P2001633511trial_trial".
+   2020-02-06T15:44:07.81+0300 [APP/TASK/deploy/0] OUT Previous build with request ID 470886 finished at 2020-02-06 12:27:31.390847000 with status Finished and message: Configuring libraries in the container "LEV_SCP_KAAL"; removing []; updating or adding [com.sap.hana.di.afllangprocedure, com.sap.hana.di.analyticprivilege, com.sap.hana.di.applicationtime, com.sap.hana.di.calculationview, com.sap.hana.di.cds, com.sap.hana.di.collection, com.sap.hana.di.constraint, com.sap.hana.di.copyonly, com.sap.hana.di.dropcreatetable, com.sap.hana.di.flowgraph, com.sap.hana.di.fulltextindex, com.sap.hana.di.function, com.sap.hana.di.graphworkspace, com.sap.hana.di.index, com.sap.hana.di.library, com.sap.hana.di.logicalschema, com.sap.hana.di.procedure, com.sap.hana.di.projectionview, com.sap.hana.di.remotetable, com.sap.hana.di.reptask, com.sap.hana.di.resultcache, com.sap.hana.di.role, com.sap.hana.di.searchruleset, com.sap.hana.di.sequence, com.sap.hana.di.statistics, com.sap.hana.di.structuredprivilege, com.sap.hana.di.synonym, com.sap.hana.di.systemversioning, com.sap.hana.di.table, com.sap.hana.di.tabledata, com.sap.hana.di.tabletype, com.sap.hana.di.textconfig, com.sap.hana.di.textdictionary, com.sap.hana.di.textminingconfig, com.sap.hana.di.textrule, com.sap.hana.di.trigger, com.sap.hana.di.view, com.sap.hana.di.virtualfunction, com.sap.hana.di.virtualfunctionpackage, com.sap.hana.di.virtualpackage, com.sap.hana.di.virtualprocedure, com.sap.hana.di.virtualtable]... ok.
+   2020-02-06T15:44:07.81+0300 [APP/TASK/deploy/0] OUT Processing revoke files...
+   2020-02-06T15:44:07.81+0300 [APP/TASK/deploy/0] OUT Processing revoke files... ok (0s 0ms)
+   2020-02-06T15:44:07.81+0300 [APP/TASK/deploy/0] OUT Processing grants files...
+   2020-02-06T15:44:07.81+0300 [APP/TASK/deploy/0] OUT Processing grants files... ok (0s 0ms)
+   2020-02-06T15:44:07.82+0300 [APP/TASK/deploy/0] OUT Preprocessing files...
+   2020-02-06T15:44:07.82+0300 [APP/TASK/deploy/0] OUT Preprocessing files... ok (0s 1ms)
+   2020-02-06T15:44:07.82+0300 [APP/TASK/deploy/0] OUT Connecting to the container "LEV_SCP_KAAL"...
+   2020-02-06T15:44:08.07+0300 [APP/TASK/deploy/0] OUT Connecting to the container "LEV_SCP_KAAL"... ok (0s 254ms)
+   2020-02-06T15:44:08.07+0300 [APP/TASK/deploy/0] OUT Locking the container "LEV_SCP_KAAL"...
+   2020-02-06T15:44:08.67+0300 [APP/TASK/deploy/0] OUT Locking the container "LEV_SCP_KAAL"... ok (0s 597ms)
+   2020-02-06T15:44:08.67+0300 [APP/TASK/deploy/0] OUT Synchronizing files with the container "LEV_SCP_KAAL"...
+   2020-02-06T15:44:09.87+0300 [APP/TASK/deploy/0] OUT Synchronizing files with the container "LEV_SCP_KAAL"... ok (1s 201ms)
+   2020-02-06T15:44:10.44+0300 [APP/TASK/deploy/0] OUT 8 modified or added files are scheduled for deploy based on delta detection
+   2020-02-06T15:44:10.44+0300 [APP/TASK/deploy/0] OUT 0 deleted files are scheduled for undeploy based on delta detection (filtered by undeploy whitelist)
+   2020-02-06T15:44:10.44+0300 [APP/TASK/deploy/0] OUT 0 files are scheduled for deploy based on explicit specification
+   2020-02-06T15:44:10.45+0300 [APP/TASK/deploy/0] OUT 0 files are scheduled for undeploy based on explicit specification
+   2020-02-06T15:44:10.45+0300 [APP/TASK/deploy/0] OUT Deploying to the container "LEV_SCP_KAAL"...
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT  Starting make in the container "LEV_SCP_KAAL" with 8 files to deploy, 0 files to undeploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Disabling table replication for the container schema "LEV_SCP_KAAL"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Disabling table replication for the container schema "LEV_SCP_KAAL"... ok  (0s 121ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Migrating libraries... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Migrating libraries... ok  (0s 8ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Making... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Preparing... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Preparing the make transaction... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Deploying the configuration file "src/.hdiconfig"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Deploying the configuration file "src/.hdiconfig"... ok  (0s 48ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Deploying the namespace file "src/gen/.hdinamespace"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Deploying the namespace file "src/gen/.hdinamespace"... ok  (0s 28ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/ADDRESS.hdbcds" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/ADDRESS.hdbcds" for deploy... ok  (0s 46ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOP.hdbcds" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOP.hdbcds" for deploy... ok  (0s 0ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOPSERVICE_ADDRESS.hdbcds" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOPSERVICE_ADDRESS.hdbcds" for deploy... ok  (0s 1ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOPSERVICE_SHOP.hdbcds" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/gen/SHOPSERVICE_SHOP.hdbcds" for deploy... ok  (0s 0ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/sequences/adid.hdbsequence" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/sequences/adid.hdbsequence" for deploy... ok  (0s 2ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/sequences/shopid.hdbsequence" for deploy... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Adding "src/sequences/shopid.hdbsequence" for deploy... ok  (0s 0ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Preparing... ok  (0s 212ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Preparing the make transaction... ok  (1s 163ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Calculating dependencies... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT     Expanding... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT     Expanding... ok  (0s 20ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT     Precompiling... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/ADDRESS.hdbcds"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/SHOP.hdbcds"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/SHOPSERVICE_ADDRESS.hdbcds"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/SHOPSERVICE_SHOP.hdbcds"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/sequences/adid.hdbsequence"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/sequences/shopid.hdbsequence"... 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/sequences/adid.hdbsequence"... ok  (0s 6ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/sequences/shopid.hdbsequence"... ok  (0s 6ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/ADDRESS.hdbcds"... ok  (0s 16ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT       Error: com.sap.hana.di.cds: "TOP" is a reserved SQL keyword and cannot be used as a name [1310103]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT         at "src/gen/SHOP.hdbcds" (6:3-6)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT       Error: com.sap.hana.di.cds: Unexpected token "TOADDRESS". Expected was "SERIES" or "}" [1310178]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT         at "src/gen/SHOP.hdbcds" (7:3-12)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT       Error: com.sap.hana.di.cds: "TOP" is a reserved SQL keyword and cannot be used as a name [1310103]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT         at "src/gen/SHOPSERVICE_SHOP.hdbcds" (9:9-12)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT      Precompiling "src/gen/SHOPSERVICE_ADDRESS.hdbcds"... ok  (0s 17ms)
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT     Error: Precompiling... failed [8212133]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Error: Calculating dependencies... failed [8212108]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT    Make failed (7 errors, 0 warnings): tried to deploy 8 files, undeploy 0 files, redeploy 0 dependent files 
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT   Error: Making... failed [8211605]
+   2020-02-06T15:44:12.55+0300 [APP/TASK/deploy/0] OUT  Error: Starting make in the container "LEV_SCP_KAAL" with 8 files to deploy, 0 files to undeploy... failed [8214168]
+   2020-02-06T15:44:12.56+0300 [APP/TASK/deploy/0] ERR Deployment to container LEV_SCP_KAAL failed - error: HDI make failed [Deployment ID: none].
+   2020-02-06T15:44:12.56+0300 [APP/TASK/deploy/0] ERR Error: HDI make failed
+   2020-02-06T15:44:12.56+0300 [APP/TASK/deploy/0] OUT (7s 301ms)
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! code ELIFECYCLE
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! errno 1
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! deploy@ start: `node node_modules/@sap/hdi-deploy/deploy.js`
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! Exit status 1
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! 
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! Failed at the deploy@ start script.
+   2020-02-06T15:44:12.57+0300 [APP/TASK/deploy/0] ERR npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+   2020-02-06T15:44:12.60+0300 [APP/TASK/deploy/0] ERR npm ERR! A complete log of this run can be found in:
+   2020-02-06T15:44:12.60+0300 [APP/TASK/deploy/0] ERR npm ERR!     /home/vcap/app/.npm/_logs/2020-02-06T12_44_12_580Z-debug.log
+   2020-02-06T15:44:12.68+0300 [APP/TASK/deploy/0] OUT Exit status 1
+   2020-02-06T15:44:13.00+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 stopping instance b4beb082-9edb-4867-9907-e2d51e9ad184
+   2020-02-06T15:44:13.00+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 destroying container for instance b4beb082-9edb-4867-9907-e2d51e9ad184
+   2020-02-06T15:44:14.34+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 successfully destroyed container for instance b4beb082-9edb-4867-9907-e2d51e9ad184
+   2020-02-06T15:44:41.95+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 creating container for instance 5096f181-ee1e-4572-bed2-50b06bba9a8e
+   2020-02-06T15:44:43.93+0300 [CELL/0] OUT Cell ab32e57c-5146-49bc-a0cf-ac413742a784 successfully created container for instance 5096f181-ee1e-4572-bed2-50b06bba9a8e
+   2020-02-06T15:44:51.26+0300 [APP/TASK/deploy/0] OUT > deploy@ start /home/vcap/app
+   2020-02-06T15:44:51.26+0300 [APP/TASK/deploy/0] OUT > node node_modules/@sap/hdi-deploy/deploy.js
+   2020-02-06T15:44:53.18+0300 [APP/TASK/deploy/0] OUT @sap/hdi-deploy, version 3.11.6 (mode default), server version 2.00.040.00.1563450557 (2.0.40.0), node version 8.16.2, HDI version 2, container API version 44
+   2020-02-06T15:44:53.18+0300 [APP/TASK/deploy/0] OUT Using default environment variables from file "default-env.json"
+   2020-02-06T15:44:53.18+0300 [APP/TASK/deploy/0] OUT The server does not support live updating of make messages. The messages will be displayed, when the make is done.
+   2020-02-06T15:44:53.37+0300 [APP/TASK/deploy/0] OUT No ignore file at /home/vcap/app/.hdiignore.
+   2020-02-06T15:44:53.37+0300 [APP/TASK/deploy/0] OUT Collecting files...
+   2020-02-06T15:44:53.46+0300 [APP/TASK/deploy/0] OUT Collecting files... ok (0s 84ms)
+   2020-02-06T15:44:53.46+0300 [APP/TASK/deploy/0] OUT 3 directories collected
+   2020-02-06T15:44:53.46+0300 [APP/TASK/deploy/0] OUT Target service: lev_hdi

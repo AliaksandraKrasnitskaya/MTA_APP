@@ -1,0 +1,93 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:layout="sap.ui.layout"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns:vm="sap.ui.comp.variants"
+	controllerName="shops.controller.Master">
+
+	<f:DynamicPage id="dynamicPageId" headerExpanded="onToggleHeader" > 
+
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<vm:VariantManagement standardItemText="{i18n>VariantManagementShops}">
+					</vm:VariantManagement>
+				</f:heading>
+			</f:DynamicPageTitle>
+		</f:title>
+
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+					<f:content>
+						<fb:FilterBar id="filterbar" clear="onClear" class="sapUiSmallMargin" search="onSearchFilter" useToolbar="false" showClearButton="true" showClearOnFB="true" showRestoreButton="false">
+							<fb:filterGroupItems>
+            					<fb:FilterGroupItem groupName="Shop Data" partOfCurrentVariant="true" visibleInFilterBar="true" groupTitle="Shop" name="A" label="Name" labelTooltip="Shop Name">
+									<fb:control>
+										<Input id="Fname" type="Text"/>
+									</fb:control>				
+								</fb:FilterGroupItem>
+       						</fb:filterGroupItems>
+						</fb:FilterBar>
+					</f:content>
+			</f:DynamicPageHeader>
+		</f:header>
+
+		<f:content>
+				<Table 
+					id="ShopList"
+					items="{ 
+							path: '/Shop', 
+						 	sorter: { path: 'shopid', descending: false }, 
+						 	parameters: { $expand: 'toAddress', $count: true } 
+					}" 
+					updateFinished="onUpdateFinished"
+					class="sapFDynamicPageAlignContent"
+					mode = "MultiSelect"
+					selectionChange="onSelectionChange"
+					growing="true"
+					growingThreshold="4">
+
+					<headerToolbar>
+						<OverflowToolbar>
+							<Title id="TableTitle" level="H2"/>						
+							<ToolbarSpacer/>
+							<SearchField placeholder="{i18n>searchFieldPlaceholder}" id="searchField" search="onSearch" width="17.5rem"/>
+							<OverflowToolbarButton id="delButton" icon="sap-icon://less" type="Transparent" press="onDelete" enabled="false"/>
+							<OverflowToolbarButton icon="sap-icon://add" type="Transparent" press="onCreate"/>
+						</OverflowToolbar>
+					</headerToolbar>
+
+					<columns>
+						<Column width="20%" demandPopin="true">
+							<Text text="{i18n>name}"/>
+						</Column>
+						<Column>
+							<Text text="top"/>
+						</Column>
+						<Column>
+							<Text text="city"/>
+						</Column>
+
+					</columns>
+
+					<items>
+						<ColumnListItem type="Navigation"  press="onItemPress">
+							<cells>
+								<ObjectIdentifier title="{shopid}" text="{name}"/>
+                        	</cells>
+                        	<cells>
+								<Text text="{top}"/>
+                        	</cells>
+                        	<cells>
+								<FormattedText htmlText="{toAddress/city}&lt;br&gt;{toAddress/strt} {toAddress/hnum}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+
+				</Table>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

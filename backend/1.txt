@@ -1,0 +1,3 @@
+Retrieving logs for app lev_db in org P2001633511trial_trial / space dev as aliaksandra.krasnitskaya@leverx.com...
+
+   2020-02-06T15:04:37.96+0300 [API/54] OUT Created app with guid e3997aed-34ae-43e3-a14e-58cce0275d95

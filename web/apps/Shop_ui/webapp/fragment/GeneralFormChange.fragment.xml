@@ -1,0 +1,30 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:forms="sap.ui.layout.form">
+    <VBox class="sapUiSmallMargin">
+        <forms:SimpleForm layout="ColumnLayout"  id="GeneralChangeForm" editable="true" width="auto">
+            <core:Title text="Addresses" />
+            <Label text="City" />
+            <Input id="ChangeAddressCity" change="onChange" value="{/toAddress/city}" />
+            <Label text="Street" />
+            <Input id="ChangeAddressStreet" change="onChange" value="{/toAddress/strt}" />
+            <Label text="Home Number" />
+            <Input id="ChangeAddressHomeNum" change="onChange" value="{/toAddress/hnum}" />
+            
+            <core:Title text="GradeBook" />
+            <Label text="Start Date" />
+            <DatePicker id="ChangeGradeBookStDate" valueFormat="yyyy-MM-dd" change="onChange" value="{/toGradeBook/stdate}" />
+            <Label text="Course" />
+            <Input id="ChangeGradeBookCourse" change="onChange" value="{/toGradeBook/course}" />
+            
+            <core:Title text="Personal"/>
+		    <Label text="Name"/>
+		    <Input id="ChangeName" change="onChange" value="{/name}"/>
+		    <Label text="Second Name"/>
+		    <Input id="ChangeSurName" change="onChange" value="{/surnm}"/>
+		    <Label text="Age"/>
+		    <Input id="ChangeAge" change="onChange" value="{/age}"/>
+        </forms:SimpleForm>
+    </VBox>
+</core:FragmentDefinition>

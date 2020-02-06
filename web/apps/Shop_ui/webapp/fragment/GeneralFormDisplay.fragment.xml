@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:forms="sap.ui.layout.form">
+    <VBox class="sapUiSmallMargin">
+        <forms:SimpleForm layout="ColumnLayout" id="GeneralDisplayForm" editable="false" width="auto">
+            <core:Title text="Addresses" />
+            <Label text="City" />
+            <Text id="DisplayAddressCity" text="{/toAddress/city}" />
+            <Label text="Street" />
+            <Text id="DisplayAddressStreet" text="{/toAddress/strt}" />
+            <Label text="Home Number" />
+            <Text id="DisplayAddressHomeNum" text="{/toAddress/hnum}" />
+           
+            <core:Title text="Shop"/>
+		    <Label text="Name"/>
+		    <Text id="DisplayName" text="{/name}"/>
+		    <Label text="Top"/>
+		    <Text id="DisplayTop" text="{/top}"/>
+        </forms:SimpleForm>
+    </VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		title="{i18n>viewSettingDialogMaster}"
+		confirm="handleViewSettingsDialogButtonConfirm">
+		<sortItems>
+			<ViewSettingsItem text="{i18n>studid}" key="studid" />
+			<ViewSettingsItem text="{i18n>name}" key="name" selected="true"  />
+			<ViewSettingsItem text="{i18n>surname}" key="surnm" />
+			<ViewSettingsItem text="{i18n>age}" key="age" />
+		</sortItems>
+		<groupItems>
+			<ViewSettingsItem text="{i18n>name}" key="name" />
+			<ViewSettingsItem text="{i18n>surname}" key="surnm" />
+			<ViewSettingsItem text="{i18n>age}" key="age" />
+		</groupItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
